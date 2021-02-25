@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>XMeme</title>
+</head>
+
+<body>
+  <!-- <header>XMeme</header> -->
+  <div class="container">
+    <h1>Meme Stream</h1>
+
+    <!-- My form -->
+    <div class="Mform">
+      <form action="/memes" method="POST">
+        <label for="name">Meme Owner</label><br>
+        <input type="text" name="name" autocapitalize="words" placeholder="Enter your full name" size="80" required>
+        <br>
+        <label for="caption">caption</label><br>
+        <input type="text" name="caption" autocapitalize="words" placeholder="Be creative with the caption" size="80" required>
+        <br>
+        <label for="url">Meme URL</label><br>
+        <input type="url" name="url" placeholder="Enter URL of your meme here" size="80">
+        <button type="submit" class="Sbutton">Submit</button>
+      </form>
+    </div>
+    <!-- <button id="update-button">Replace Yoda's quote</button> -->
+
+
+    <!-- used to show all the memes here -->
+ <div class="meme">
+   <ul>
+     <% for(let i=values.length-1, count=1; i >=0  && count<=100 ; i--, count++) { %>
+    <li class="list">
+     <p class="name"> <%=values[i].name %> </p>
+     <div class="comment">
+      <p> <%=values[i].caption %> </p> 
+      <img src=" <%=values[i].url %> " alt="image" class="img">
+     </div>
+    </li> 
+    <% } %>
+   </ul>
+ </div>
+</div>
+ <!-- <script type="text/javascript" src="script.js"></script> -->
+</body>
+</html>

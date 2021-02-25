@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Alegreya', serif;
+}
+body{
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* main container */
+.container{
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+/* heading  */
+h1{
+  text-align: center;
+  margin-top: 3px;
+  color:rgb(90, 224, 241)
+}
+
+/* for the form */
+.Mform{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* for the form-lable */
+label{
+  font-weight: 600;
+}
+
+/* for the form-input */
+input[type="text"], input[type="url"]{
+  height: 23px;
+}
+
+/* for the submit button */
+.Sbutton{
+  color: #fff;
+text-transform: uppercase;
+background: rgb(113, 212, 236);
+padding: 10px;
+border-radius: 5px;
+}
+
+/* for the fetched memes */
+.meme{
+  display: flex;
+  margin: 0px auto;
+  width:50%;
+  height: 65vh;
+  overflow: scroll;
+}
+
+/* for the meme-list */
+.list{
+  margin: 10px;
+  list-style: none;
+
+}
+.name{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0px;
+}
+.comment{
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+.img{
+  width: 55%;
+  margin: 5px auto;
+}
+
+/* for the scroll-bar */
+::-webkit-scrollbar{
+  width: 2px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.377);
+  border-left: 0 solid whitesmoke;
+  border-right: 0 solid whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+  width: 0;
+  height: 15%;
+  background-color: deepskyblue;
+  transition: 0.5s ease-in-out;
+}
